@@ -48,6 +48,12 @@ const Weather = () => {
       const response = await fetch(url);
       const data = await response.json();
 
+      if (!response.ok) {
+        console.error("Error fetching weather data:", response.status, response.statusText);
+        alert("Error fetching weather data. Please try again.");
+        return;
+      }
+
       console.log("Parsed Data:", data);
 
       if (data.error) {
@@ -63,8 +69,8 @@ const Weather = () => {
         temperature: data.current.temp_c,
         location: data.location.name,
         icon: icon,
-        time: data.location.localtime,
         local_time: data.location.localtime.split(" ")[1],
+        local_date: data.location.localtime.split(" ")[0],
       });
     } catch (error) {
       setWeatherData(false);
@@ -95,7 +101,10 @@ const Weather = () => {
       {weatherData && weatherData.temperature !== undefined ? (
         <>
           <div className="local-time">
-            <p>{weatherData.time}</p>
+            <p>{weatherData.local_time}</p>
+          </div>
+          <div className="local-date">
+            <p>{weatherData.local_date}</p>
           </div>
           <img src={weatherData.icon} alt="Weather Icon" className='weather-icon'/>
           <p className='temperature'>{weatherData.temperature}°C</p>
