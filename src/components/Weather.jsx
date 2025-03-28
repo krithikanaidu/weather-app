@@ -37,7 +37,7 @@ const Weather = () => {
       return;
     }
     try {
-      const BASE_URL = "http://api.weatherapi.com/v1";
+        const BASE_URL = "https://api.weatherapi.com/v1";
       const API_KEY = import.meta.env.VITE_APP_ID; // Use .env API key
       if (!API_KEY) {
         alert("API Key is missing. Please set VITE_APP_ID in your environment variables.");
