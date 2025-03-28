@@ -1,12 +1,47 @@
-# React + Vite
+# Weather WebApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+The Weather WebApp is a simple and intuitive application that provides real-time weather updates for any location. It allows users to check current weather conditions, forecasts, and other meteorological data.
 
-Currently, two official plugins are available:
+## Features
+- **Current Weather**: Displays temperature, humidity, wind speed, and weather conditions.
+- **Forecast**: Provides the current weather forecast for the given city.
+- **Search by Location**: Search weather details by city.
+- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **Frontend**: HTML, CSS, JavaScript
+- **API**: Weather API
+- **Backend**: Node.js
+- **Frameworks**: React
 
-## Expanding the ESLint configuration
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/krithikanaidu/weather-app.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd weather-app
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the application:
+    ```bash
+    npm start
+    ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Usage
+1. Open the app in your browser.
+2. Enter a city name or allow location access for GPS-based weather updates.
+3. View current weather and forecasts.
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+
+## Acknowledgments
+- [WeatherAPI](https://www.weatherapi.com/my/) for providing weather data.
+- Inspiration from various weather apps.
