@@ -1,0 +1,69 @@
+.forecast-container {
+  text-align: center;
+  margin-top: 20px;
+  color: #f0f4f5;
+}
+
+.forecast {
+  place-self: center;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #9ba0ab;
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Add spacing between header and forecast list */
+  align-items: flex-end;
+}
+
+.header_forecast {
+  font-size: 30px; /* Adjusted size for better visibility */
+  color: #390007; /* Darker color for better contrast */
+  margin-bottom: 20px; /* Space between header and forecast list */
+  font-weight: bold; /* Make the header bold */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.back_home {
+  background-color: black;
+  padding-top: 0px;
+  border-radius: 50%;
+  width: 45px; /* Set fixed width for a circular shape */
+  height: 44px; /* Set fixed height for a circular shape */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  margin-left: auto; /* Push to the flex-end */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add hover effect */
+}
+
+.back_home:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.forecast-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.forecast-list {
+  display: flex;
+  flex-direction: column; /* Ensure items are stacked vertically */
+  gap: 10px; /* Add spacing between items */
+  width: 100%; /* Ensure it spans the container width */
+}
+
+.forecast-day {
+  display: flex;
+  align-items: center; /* Align items within each day */
+  gap: 10px; /* Add spacing between elements in each day */
+}

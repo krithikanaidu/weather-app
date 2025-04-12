@@ -12,6 +12,6 @@
 .app{
   min-height: 100vh;
   display: grid;
-  background: #0e0e0e;
+  background: #1a1a1a; /* Slightly lighter color for better visibility */
 }
 
