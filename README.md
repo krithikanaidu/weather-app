@@ -12,7 +12,6 @@ The Weather WebApp is a simple and intuitive application that provides real-time
 ## Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
 - **API**: Weather API
-- **Backend**: Node.js
 - **Frameworks**: React
 
 ## Installation
