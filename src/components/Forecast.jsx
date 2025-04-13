@@ -11,25 +11,24 @@ const Forecast = () => {
 
   return (
     <div className="forecast">
-    <div className="forecast-container">
+      <div className="forecast-container">
         <h2 className="header_forecast">3-Day Forecast</h2>
         <div className="forecast-list">
           <br />
           {forecastData.length > 0 ? (
             forecastData.map((day, index) => (
               <div key={index} className="forecast-day">
-                <p>{day.date}</p>
+                <p>{new Date(day.date).toLocaleDateString("en-US", { weekday: "long" })}</p>
                 <img src={day.day.condition.icon} alt="weather icon" />
                 <p>{day.day.avgtemp_c}°C</p>
               </div>
-              
             ))
           ) : (
             <p>No forecast data available</p>
           )}
         </div>
         <div className="back_home">
-        <img
+          <img
             src={back}
             alt="redirect_home"
             className="redirect_home"
